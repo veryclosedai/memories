@@ -1,19 +1,63 @@
-<div class="scroll-container scroll-y">
-  <div class="scroll-content grid square-grid">
-    <div class="scroll-section padded">
-      <div class="large row">
-        <div class="square"></div>
-      </div>
-    </div>
-    <div class="scroll-section padded">
-      <div class="large row">
-        <div class="square"></div>
-      </div>
-    </div>
-    <div class="scroll-section padded">
-      <div class="large row">
-        <div class="square"></div>
-      </div>
-    </div>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <title>memories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .square {
+            width: 100vw;
+            height: 100vh;
+            background-color: white;
+        }
+
+        .square img.placeholder{
+            width: 60vh;
+            float: top;
+        }
+
+        .container {
+            position: relative; /* Important for absolute positioning */
+            height: 300px; /* Or any desired height */
+            width: 500px; /* Or any desired width */
+        }
+
+        .stuff {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* fill parent vertically */
+        }
+
+        .square span.text {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 100px;
+            position: relative;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="square">
+            <div class="stuff">
+                <img class="placeholder" src="placeholder.jpg">
+            <span class="text">nothing here yet</span>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
